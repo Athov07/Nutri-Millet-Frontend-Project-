@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="stylehome.css">
+    
+</head>
+<body>
+    
+<!-- Navigation bar 1 Start -->
+<nav class="navbar">
+    <div class="navbar-toggle">
+      <button class="toggle-btn" onclick="toggleNav()">☰</button>
+    </div>
+    <ul class="navbar-link" id="navbar-link">
+        <li><a href="aboutmillet.html">Millets</a></li>
+        <li><a href="testiminialmain.html">Testomonial</a></li>
+        <li><a href="contactus.html">Contact Us </a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="FAQs.html">FAQ's</a></li>
+        <li><a href="loginmain.html">Login</a></li> 
+    </ul>
+</nav>
+
+<!-- Navigation bar 1 End -->
+
+    <header>
+        <!-- Logo or site name -->
+        <div class="header">
+            <img src="logof.webp" alt="">
+        </div>
+        
+        <!-- Navigation bar 2 Sart -->
+        <nav class="navbar">
+            <div class="navbar-toggle">
+              <button class="toggle-btn" onclick="toggleNav1()">☰</button>
+            </div>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="milletstype.html">Types</a></li>
+                <li><a href="indexp.html">Products</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="health.html">Health & Benefits</a></li>
+                <!-- <li><a href="#"><i class='bx bx-search-alt-2'></i></a></li> -->
+                <!-- <li><a href="#"><i class='bx bx-cart-alt'></i></a></li> -->
+            </ul>
+          </nav>
+        <!-- Navigation bar 2 End -->
+    </header>
+    <main>
+        <div class="slider0">
+        <!-- Image Slider Start -->
+        <div class="slider">
+            <div class="slides">
+               <!-- Ratio Button Start  -->
+               <input type="radio" name="radio-btn" id="radio1">
+               <input type="radio" name="radio-btn" id="radio2">
+               <input type="radio" name="radio-btn" id="radio3">
+               <input type="radio" name="radio-btn" id="radio4">
+               <input type="radio" name="radio-btn" id="radio5">
+               <!-- Ratio Button End  -->
+            
+               <!-- Slider Images Start -->
+               <div class="slide">
+                <img src="NutriMilletMainSlider.webp" alt="">
+               </div>
+
+               <div class="slide first">
+                <img src="./slider/slider3.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./slider/slider2.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./slider/slider6.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./slider/slider1.webp" alt="">
+               </div>
+
+               <!-- Slider Images End -->
+               <!-- Automatic Navigation Start -->
+               <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+               </div>
+               <!-- Automatic Navigation End -->
+            </div>
+
+            <!-- Manul Navigation Start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- Manul Navigation End -->
+        </div>
+    </div>
+
+        <!-- Image Slider End -->
+        <div class="top">
+            <a href=""><button type="submit"><i class='bx bx-up-arrow-alt'></i></button></a>
+        </div>
+      
+        <section class="hero">
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+            <div class="cognizent">
+                <div class="hero-content">
+                    <h2>Welcome To Our Website</h2>
+                    <h3>Hello, It's Me</h3>
+                    <h2>Nutri Millet</h2>
+                    <p>‘Nutri Millet’, established in December 2023, is a wholly-owned subsidiary of Coastal Foods India. We, at Nutri Millet, have successfully setup the highest production capacity plant in Pedavadlapudi region of Guntur, Andhra Pradesh, which is equipped with unique procurement techniques, state-of-art machinery and best-in-class R&D professionals.</p>
+                    <button class="cta-button"><a href="aboutus.html">Learn More</a></button>
+                </div>
+                <div class="hero-img">
+                    <img src="nutri-millet-high-resolution-logo.webp" alt="#">
+                </div>
+            </div>
+        </section>
+
+        <div class="msample-products">
+        <section id="sample-product">
+            <div class="center-text">
+                <h2>Our trending <span>Products</span></h2>
+            </div>
+             <div class="container_product">
+                <div class="box">
+                    <div class="row_image">
+                        <a href="pdetails3.html"><img src="./Pro-Details-Img/pd31.png" alt="mp"></a>
+                        <div class="product-text">
+                            <h5>Sale</h5>
+                        </div>
+                        
+                        <div class="heart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"/></svg>  
+                        </div>
+                        <div class="ratting">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z"/></svg>
+                        </div>
+                        <div class="price">
+                            <p>Millet Rava Idli</p>
+                            <p>Rs.-199</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="row_image">
+                        <a href="pdetails2.html"><img src="./Pro-Details-Img/pd21.png" alt="mp"></a>
+                        <div class="product-text">
+                            <h5>Sale</h5>
+                        </div>
+                        
+                        <div class="heart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"/></svg>  
+                        </div>
+                        <div class="ratting">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z"/></svg>
+                        </div>
+                        <div class="price">
+                            <p>Multi Millet Dosa</p>
+                            <p>Rs.-129</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="row_image">
+                        <a href="pdetails1.html"><img src="./Pro-Details-Img/pd11.png" alt="mp"></a>
+                        <!-- <div class="product-text">
+                            <h5>Sale</h5>
+                        </div> -->
+                        
+                        <div class="heart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"/></svg>  
+                        </div>
+                        <div class="ratting">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z"/></svg>
+                        </div>
+                        <div class="price">
+                            <p>Foxtail Dosa</p>
+                            <p>Rs.-149</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="box">
+                    <div class="row_image">
+                        <a href="pdetails.html"><img src="./Pro-Details-Img/pd1.png" alt="mp"></a>
+                        <div class="product-text">
+                            <h5>Sale</h5>
+                        </div>
+                        
+                        <div class="heart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"/></svg>  
+                        </div>
+                        <div class="ratting">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z"/></svg>
+                        </div>
+                        <div class="price">
+                            <p>Millet Upma Rava</p>
+                            <p>Rs.-139</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </section>
+            <div class="sm-pbtn">
+                <button type="submit"><a href="indexp.html">More Products</a></button>
+            </div>
+        </div>
+
+        <!-- Recipes Section Start -->
+    <div class="sample-recipes">
+        <section id="p-recipes">
+            <div class="center-text">
+                <h2>Our <span>Recipes</span></h2>
+            </div>
+        
+            <div class="container_recipes">
+                <div class="recipe">
+                    <div class="row">
+                        <img src="./All-Project-Img/image1.webp" alt="">
+                        <div class="recipe-text">
+                            <p style="font-size: 20px;font-weight: 600;">Foxtail Rava Dosa</p>
+                            <button><span style="font-size:18px;cursor:pointer" onclick="openNav1()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                        </div>
+                        <div id="myNav1" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+                            <div class="overlay-content">
+                                <div  class="rec-head"><h1>Foxtail Rava Dosa</h1></div>
+                                <p><h3>Ingredients:</h3> <i class='bx bx-food-menu'></i> EatMillet Foxtail idli rava 1 cup, Wheat flour 1  cup, Medium size onion -1, Chilli-1, Coriander leaves, Salt as per your taste.</p>
+                              <ul>
+                                <li><h3>Making process:</h3></li>
+                                <li><i class='bx bx-food-menu'></i> Take 1 cup of EatMillet foxtail idli rava and what flour 1 cup and mix it well</li>
+                                <li><i class='bx bx-food-menu'></i> Add onions and chillies and coriander leaves then mix it </li>
+                                <li><i class='bx bx-food-menu'></i> And add some sufficient water to make like dosa batter, mix it well</li>
+                                <li><i class='bx bx-food-menu'></i> Take a pan and some oil on pan and add sufficient batter on the pan and fry it both sides</li>
+                                <li><i class='bx bx-food-menu'></i> Then ready to serve the EatMillet foxtail idli rava dosa with tomato chutney Or ground nut chutney.</li>
+                              </ul>
+                            </div>
+                        </div>
+                </div>
+                </div>
+        
+                <div class="recipe">
+                    <div class="recipe">
+                        <div class="row">
+                            <img src="./All-Project-Img/image2.webp" alt="">
+                            <div class="recipe-text">
+                                <p style="font-size: 20px;font-weight: 600;">Foxtail Millet Pongal</p>
+                                <button><span style="font-size:18px;cursor:pointer" onclick="openNav2()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                            </div>
+                            <div id="myNav2" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+                                <div class="overlay-content">
+                                    <div  class="rec-head"><h1>Foxtail Millet Pongal</h1></div>
+                                    <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> 1/2 cup EatMillet Foxtail Millet Upma rava , 1/2 cup Yellow Moong Dal (Split), 2 Green Chillies , 1 Tsp Cumin seeds (Jeera), 2 Tsp Whole Black Peppercorns , 1 sprig Curry leaves,  8 Cashew nuts , 1/4 Tsp Asafoetida (hing) , 1 Tsp Ginger , chopped , 2 Tsp Ghee 1 Tsp Sunflower Oil, Salt  to taste.</p>
+                                  <ul>
+                                    <li><h3>Making process:</h3></li>
+                                    <li><i class='bx bx-food-menu'></i> First dry roast foxtail millet Upma Rava and moong dal in a hot kadai. This will bring a nice aroma to the Pongal.</li>
+                                    <li><i class='bx bx-food-menu'></i> Wash & soak roasted foxtail millet Upma Rava and moong dal together for about 1 hour. Soaking helps in faster cooking.</li>
+                                    <li><i class='bx bx-food-menu'></i> In a pressure cooker, add the soaked EatMillet Foxtail millet Upma rava, Dal, 4 cups of water, whole green chilies and pressure cook for 3-4 whistles or until soft.</li>
+                                    <li><i class='bx bx-food-menu'></i> Once pressure is released, remove the cooker lid and mash the mixture using a ladle.</li>
+                                    <li><i class='bx bx-food-menu'></i> In a deep bottom pan, add ghee and roast cashews in hot ghee until they turn golden brown. Remove cashews and keep them aside.</li>
+                                    <li><i class='bx bx-food-menu'></i> Into the same pan, add oil, once hot, add cumin seeds, peppercorns, asafoetida, salt, chopped ginger and curry leaves. Sauté for a minute or two. Now add cooked Eat Millet foxtail millet – Upma rava  and mix it well making sure no lumps are formed.Reduce the flame and cook it for 5 minutes.</li>
+                                    <li><i class='bx bx-food-menu'></i> Serve the EatMillet Foxtail Millet Upma rava Pongal hot with red chilli coconut chutney and Mixed Vegetable Sambar or even spicy lemon pickle goes well with Pongal.</li>
+                                  </ul>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="recipe">
+                    <div class="recipe">
+                        <div class="row">
+                            <img src="./All-Project-Img/image3.webp" alt="">
+                            <div class="recipe-text">
+                                <p style="font-size: 20px;font-weight: 600;">Foxtail Millet Mango Rice</p>
+                                <button><span style="font-size:18px;cursor:pointer" onclick="openNav3()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                            </div>
+                            <div id="myNav3" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+                                <div class="overlay-content">
+                                    <div  class="rec-head"><h1>Foxtail Millet Mango Rice</h1></div>
+                                    <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> Foxtail millet: 1 cup,water: 2 cups, Raw mango, Grated 1 or per taste,  Groundnuts 2 tsp, Seasoning curry leaves, Chillies, Mustard seeds, Blackgram dal,  Turmeric, Asafoetida, oil, salt to taste.</p>
+                                  <ul>
+                                    <li><h3>Making process:</h3></li>
+                                    <li><i class='bx bx-food-menu'></i> Cook the millet in water and let it cool before mixing the rest of  the  ingredients. Fry groundnuts in oil, keep aside. Prepare the seasoning. </li>
+                                    <li><i class='bx bx-food-menu'></i> Add grated mango  and saute for a minute.  Add the cooked millet and mix Tangy mango, Rice is ready….. serve hot.</li>
+                                  </ul>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="recipe">
+                    <div class="recipe">
+                        <div class="row">
+                            <img src="./All-Project-Img/image4.webp" alt="">
+                            <div class="recipe-text">
+                                <p style="font-size: 20px;font-weight: 600;">Millet Modak</p>
+                                <button><span style="font-size:18px;cursor:pointer" onclick="openNav4()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                            </div>
+                            <div id="myNav4" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+                                <div class="overlay-content">
+                                    <div  class="rec-head"><h1>Millet Modak</h1></div>
+                                    <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> Eat Millet Idli rava – 1 cup, Palm jaggery – 1 cup Water – 1 cup , Ghee – 2 tsp, Coconut – 2 tbsp (chopped), Cashew nuts – 2 tbsp (chopped), Green cardamom powder – 1 tsp, Salt – 1 pinch</p>
+                                  <ul>
+                                    <li><h3>Making process:</h3></li>
+                                    <li><i class='bx bx-food-menu'></i> Take one cup of Eat Millet idli rava And clean it and Roast it for 10 to 15 mints</li>
+                                    <li><i class='bx bx-food-menu'></i> Take 1 cup of water and add 1 cup palm jaggery.  let the jaggery get dissolved </li>
+                                    <li><i class='bx bx-food-menu'></i> Then take a kadai and add 1 tablespoon of ghee and add 2 tablespoon of chopped coconut and 2 tablespoons cashew nuts   then roast them.</li>
+                                    <li><i class='bx bx-food-menu'></i> Then strain the Jaggery water with the strainer and add green cardamom powder 1 tsp and once it start boiling switch of flame</li>
+                                    <li><i class='bx bx-food-menu'></i> Then now add Eat millet idli rava little by little into it and make sure  no lumps are formed using a whisk helps in this then now switch on the stove Mix it well and add 1 tsp of ghee into it mix it well</li>
+                                    <li><i class='bx bx-food-menu'></i> Now add 1 pinch salt then mix it well till the batter becomes like a dough let it cool it then apply little ghee in to your hand and make  the dumplings  and serve it.</li>
+                                  </ul>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sm-pbtn">
+            <button type="submit"><a href="recipes.html">More Recipes</a></button>
+        </div>
+    </div>
+
+
+<div class="my_health_bene">   
+    <section id="better_health">
+        <div class="center-text">
+            <h2><span>Healthy and Delicious</span></h2>
+        </div>
+        <div class="health_text">
+            <p>Delicious and wholesome millet recipes, brought to you straight from Grandma’s kitchen. Millets were the superfoods of our forefathers, long before the concept of superfood even existed. Rich in nutrients, full of proteins and low-calorie in nature, a potful of millets was the default breakfast meal used to jump-start everyone’s day. So, we’re taking you back to those days - to the taste of love, the aroma of memories and the flavour of wisdom,just the way grandma would have served it!</p>
+        </div>
+        <div class="container_health">
+            <div class="recipe_health">
+                <div class="row_health">
+                    <img src="./Healthy-and-Delicious/Healthy and Delicious1.webp" alt="">
+                    <div class="good_health">
+                        <h2>Low GI</h2>
+                        <p>Millets in general are proved to possess low Glycemic index.</p>        
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe_health">
+                <div class="row_health">
+                    <img src="./Healthy-and-Delicious/Healthy and Delicious2.webp" alt="">
+                    <div class="good_health">
+                        <h2>Rich In Anti-Oxidants</h2>
+                        <p>Millet contains an abundance of bioactive compounds with antioxidant activity.</p>        
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe_health">
+                <div class="row_health">
+                    <img src="./Healthy-and-Delicious/Healthy and Delicious3.webp" alt="">
+                    <div class="good_health">
+                        <h2>Rich In Fibre</h2>
+                        <p>Millets are high in nutrition and dietary fibre.</p>
+                                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe_health">
+                <div class="row_health">
+                    <img src="./Healthy-and-Delicious/Healthy and Delicious4.webp" alt="">
+                    <div class="good_health">
+                        <h2>Rich In Protein & Minerals</h2>
+                        <p>Millets serve as good source of protein, micronutrients and phytochemicals.</p>  
+                                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <div class="sm-pbtn">
+        <button type="submit"><a href="health.html">You Can Prevent</a></button>
+    </div>
+</div>
+  
+    <section id="my_better_health">
+        <div class="center-text">
+            <h2><span>Also Available at</span></h2>
+        </div>
+        <div class="container_health">
+            <div class="recipe_health">
+                <div class="row_health">
+                    <a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=678802104188&hvpos=&hvnetw=g&"><img src="./All-Project-Img/amazon.webp" alt=""></a>
+                </div>
+            </div>
+
+            <div class="recipe_health">
+                <div class="row_health">
+                    <a href="https://www.flipkart.com/"><img src="./All-Project-Img/flipkart.webp" alt=""></a>
+                </div>
+            </div>
+
+            <div class="recipe_health">
+                <div class="row_health">
+                    <a href="https://www.bigbasket.com/pb/bb-popular/"><img src="./All-Project-Img/bb.webp" alt=""></a>
+                </div>
+            </div>
+
+            <div class="recipe_health">
+                <div class="row_health">
+                    <img src="All-Project-Img/demart.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+
+
+
+
+
+     <!-- Footer Start -->
+<div class="footer_body">
+     <footer>
+        <div class="container">
+            <div class="sec-aboutus">
+                <h2>About Us</h2>
+                <p>‘Nutri Millet’, established in December 2023, is a wholly-owned subsidiary of Coastal Foods India. We, at Nutri Millet, have successfully setup.</p>
+
+                     <ul class="sci">
+                        <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                     </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="aboutmillet.html">Millets</a></li>
+                    <li><a href="indexp.html">Product</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="testiminialmain.html">Testomonial</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>NutriMillet.com</h2>
+                <ul>
+                    <li><a href="FAQs.html">FAQ's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bx-phone-call'></i></span>
+                        <p><a href="tel:+9175449093">+91-9860586471</a></p>
+                    </li>
+
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></i></span>
+                        <p><a href="mailto:NutriMillet71@gmail.com">NutriMillet71@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2023 Nutri Millet A Golden Grain Factory, Pune MH India. Powered by NutriMillet.Com</P> 
+    </div>
+</div>
+    <!-- Footer End -->
+        
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

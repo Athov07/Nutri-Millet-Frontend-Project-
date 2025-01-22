@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Recipes Page1</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+<!-- Navigation bar 1 Start -->
+
+<nav class="navbar">
+    <div class="navbar-toggle">
+      <button class="toggle-btn" onclick="toggleNav()">☰</button>
+    </div>
+    <ul class="navbar-link" id="navbar-link">
+        <li><a href="aboutmillet.html">Millets</a></li>
+        <li><a href="testiminialmain.html">Testomonial</a></li>
+        <li><a href="contactus.html">Contact Us </a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="FAQs.html">FAQ's</a></li>
+        <li><a href="loginmain.html">Login</a></li> 
+    </ul>
+  </nav>
+
+<!-- Navigation bar 1 End -->
+
+    <header>
+         <!-- Logo or site name -->
+         <div class="header">
+            <img src="logof.webp" alt="">
+        </div>
+
+        <!-- Navigation bar 2 Sart -->
+        <nav class="navbar">
+            <div class="navbar-toggle">
+              <button class="toggle-btn" onclick="toggleNav1()">☰</button>
+            </div>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="milletstype.html">Types</a></li>
+                <li><a href="indexp.html">Products</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="health.html">Health & Benefits</a></li>
+                <!-- <li><a href="#"><i class='bx bx-search-alt-2'></i></a></li>
+                <li><a href="#"><i class='bx bx-cart-alt'></i></a></li> -->
+            </ul>
+          </nav>
+        <!-- Navigation bar 2 End -->
+    </header>
+    <div class="top">
+        <a href=""><button type="submit"><i class='bx bx-up-arrow-alt'></i></button></a>
+    </div>
+    <main>
+        <div class="slider0">
+        <!-- Image Slider Start -->
+        <div class="slider">
+            <div class="slides">
+               <!-- Ratio Button Start  -->
+               <input type="radio" name="radio-btn" id="radio1">
+               <input type="radio" name="radio-btn" id="radio2">
+               <input type="radio" name="radio-btn" id="radio3">
+               <input type="radio" name="radio-btn" id="radio4">
+               <input type="radio" name="radio-btn" id="radio5">
+               <!-- Ratio Button End  -->
+               <!-- Slider Images Start -->
+               <div class="slide first">
+                <img src="./Recipes-slider-img/r-s-i-1.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./Recipes-slider-img/r-s-i-2.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./Recipes-slider-img/r-s-i-3.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./Recipes-slider-img/r-s-i-4.webp" alt="">
+               </div>
+
+               <div class="slide">
+                <img src="./All-Project-Img/image16.webp" alt="">
+               </div>
+               <!-- Slider Images End -->
+               <!-- Automatic Navigation Start -->
+               <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+               </div>
+               <!-- Automatic Navigation End -->
+            </div>
+
+            <!-- Manul Navigation Start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- Manul Navigation End -->
+        </div>
+    </div>
+    <section id="p-recipes">
+    <div class="center-text">
+        <h2>Our <span>Recipes</span></h2>
+    </div>
+
+    <div class="container">
+        <div class="recipe">
+            <div class="row">
+                <img src="./All-Project-Img/image9.webp" alt="">
+                <div class="recipe-text">
+                    <p style="font-size: 20px;font-weight: 600;">Millet Coconut Rice</p>
+                    <button><span style="font-size:18px;cursor:pointer" onclick="openNav9()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                </div>
+                <div id="myNav9" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
+                    <div class="overlay-content">
+                        <div  class="rec-head"><h1>Foxtail Millet Coconut Rice</h1></div>
+                        <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> Foxtail millet 1 cup, Coconut grated 1 cup, Ghee 2 tsp, Coriander leaves 2 tsp and  salt as desired.</p>
+                      <ul>
+                        <li><h3>Making process:</h3></li>
+                        <li><i class='bx bx-food-menu'></i> Foxtail millet is soaked for 2 hr and cooked.</li>
+                        <li><i class='bx bx-food-menu'></i> Add ghee and cumin, green leaves, ginger, leaves, red chilli, curry leaves and saute them in a pan.</li>
+                        <li><i class='bx bx-food-menu'></i> Add cooked foxtail and grated coconut and cook for two min Add salt as per taste and serve  hot.</li>
+                      </ul>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image10.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Porridge</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav10()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav10" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav10()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Foxtail Millet Porridge</h1></div>
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> 80 gms Eat Millet  Foxtail millet Upma rava, 250 ml milk 5 Banana slices, 4 pcs cashew nuts, 2 pcs figs sliced,  4 pcs lotus seeds, Handful of amaranth seeds.</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> Soak the EatMillet foxtail millet Upma rava in water for half an hour</li>
+                            <li><i class='bx bx-food-menu'></i> Drain the water.</li>
+                            <li><i class='bx bx-food-menu'></i> Add the EatMillet foxtail Upma rava  to the milk and cook it on a medium heat for 5 minutes.</li>
+                            <li><i class='bx bx-food-menu'></i> Once cooked take off heat and add figs, banana,cashew nuts, amarnath and lotus seeds.</li>
+                            <li><i class='bx bx-food-menu'></i> Then serve EatMillet Foxtail Millet Porridge.
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image11.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Kajjikayalu</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav11()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav11" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav11()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Foxtail millet Kajjikayalu</h1></div>    
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i>  Foxtail millet flour 100g, Maida 100g, Ground nuts 250g, Roasted Bengal gram 250g,  Sugar 250g,  Elaichi 50, Sesame seeds 50g, Coconut powder 50g, Dry Fruits 80g.</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> Mix foxtail millet flour and Maida and make a dough.</li>
+                            <li><i class='bx bx-food-menu'></i> Roast coconut powder, mix sugar and dry fruits.</li>
+                            <li><i class='bx bx-food-menu'></i> Roll dough into small chapati.</li>
+                            <li><i class='bx bx-food-menu'></i> Stuff coconut-sugar mixture and fold.</li>
+                            <li><i class='bx bx-food-menu'></i> Cut the extra side and deep fry.</li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image12.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Khichdi</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav12()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav12" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav12()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Millet Khichdi</h1></div>
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i>  EatMillet Millet Upma rava, Pepper ½ tsp, Garlic 5 nos, Oil 2 tbsp, Cumin seeds ½ tsp, Mustard seeds ½ tsp, Ginger(chopped) ½ tsp, Onions(chopped) ½ cup, Green chillies – 3 nos , Salt To taste , Curry leaves 1 spring , Water 3-4 cup, EatMillet Milletmillet Upma rava 1 cup, Mixed dal (chana dal, moong dal, split moong dal, red gram, toor dal) 1 cup, Ghee 1 tsp.</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> Cook the mixed dal with water in a pressure cooker. </li>
+                            <li><i class='bx bx-food-menu'></i> Crush pepper and garlic with pestle.</li>
+                            <li><i class='bx bx-food-menu'></i> Heat oil in a pan, cumin seeds, mustard seeds, crushed ginger, crushed pepper and garlic and saute it.</li>
+                            <li><i class='bx bx-food-menu'></i> Add onions, green chillies, salt, curry leaves and saute it. Add water and allow it boil, check for seasoning.</li>
+                            <li><i class='bx bx-food-menu'></i> Add EatMillet millet Upma rava and mix it, later cook until it is 70 percent done. At last add ghee and mix it</li>
+                            <li><i class='bx bx-food-menu'></i> Now EatMillet millet upma rava khichdi is ready to serve.</li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image13.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Dhokla</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav13()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav13" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav13()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Spinach Foxtail Millet Dhokla</h1></div>    
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> 1 cup Foxtail Millet ground , 1 cup Gram flour (besan) , 1 Cup Curd , 1 Teaspoon Eno’s fruit salt or ½ teaspoon baking powder, 1 Tablespoon Sunflower Oil, 1 Teaspoon Sunflower Oil for seasoning, 1 Spring Curry leaves, Finely chopped 1 teaspoon Mustard seeds, 1 Tablespoon Sesame seeds (Til seeds), 2 Coriander Leaves Finely chopped, Salt to taste For the Spinach Puree : 2 cups Spinach, 1 Green Chilli, 1 inch Ginger, 1 Teaspoon Cumin seeds (Jeera)</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> To begin making the Spinach Foxtail Millet Dhokla Recipe, Prepare a dhokla steamer, fill with water and grease the dhokla plates. Keep aside.</li>
+                            <li><i class='bx bx-food-menu'></i> Grind the spinach, cumin seeds, green Chilli and ginger in a mixer and add some water to make it into a smooth puree.</li>
+                            <li><i class='bx bx-food-menu'></i> Combine the Foxtail millet flour, Besan, spinach puree, yogurt and a little salt in a large mixing bowl. Add a little water at a time to make a thick batter up to 1 – ½ cup Allow the mixture to rest for 5 minutes.</li>
+                            <li><i class='bx bx-food-menu'></i> Preheat a steamer with water and place the dhokla batter for steaming. Steam on high heat for about 10 minutes until a toothpick inserted in the center comes out clean. Once steamed, remove the Spinach Foxtail Millet Dhokla from the steamer and keep aside for 5 minutes.</li>
+                            <li><i class='bx bx-food-menu'></i> Add in the mustard seeds, sesame seeds and curry leaves and allow it to crackle. Turn off heat and pour the seasoning over the dhoklas and cut them into squares or diamonds.</li>
+                            <li><i class='bx bx-food-menu'></i> Serve the Dhokla recipe along with Green Chutney.</li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image14.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Biryani</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav14()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav14" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav14()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Foxtail Millet Vegetable Biryani / Chicken Biryani</h1></div> 
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> Foxtail Millet 1 1/2 cup, onion sliced 2, carrots 1/2 inch pieces (2), french beans 1/2 inch pieces (15), green peas shelled 1 cup, salt as desired, cardamoms 8, black cardamom 1. cloves 15, cinnamon 1/2 inch stick, bay leaf 1, caraway seeds (shahi  jeera) 1/2 tsp, ginger-garlic paste 1 1/2 tsp, turmeric powder 1 tsp, Red chilli powder 1 tsp,  coriander powder 1 tsp, tomatoes 1 cup, garam masala powder 1 tsp, Lemon juice 1 tsp, food colour – a pinch (If desired), fresh coriander leaves chopped 2 tsp, Fresh mint leaves chopped 2 tsp.</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> Boil Foxtail millet in four cups of salted boiling water with </li>
+                            <li><i class='bx bx-food-menu'></i> Cardamom , cloves and cinnamon until three-fourth done. Drain excess water and set aside.</li>
+                            <li><i class='bx bx-food-menu'></i> Boil all the chopped vegetables   and keep aside. Add cardamoms, cloves, black cardamom and cinnamon along with bay leaf and caraway seeds and roast in  a thick bottom pan. Add tomatoes, ginger-garlic paste, deep fried onions, carrot, French beans, and boiled green peas. Sprinkle salt, cover and cook on medium heat for two minutes Add turmeric powder, red chilli powder, coriander powder garam masala powder and mix well. </li>
+                            <li><i class='bx bx-food-menu'></i> Simmer for two minutes. Arrange a layer of millet at the top over that arrange half the cooked vegetables. Sprinkle fried onions, lemon juice, food colour mixed in milk garam masala powder, the coriander leaves and the mint    leaves. Cover with a lid and cook. Let it  stand for five minutes. Serve hot.</li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image15.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Tomato Bath</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav15()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav15" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav15()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Foxtail Millet Upma rava Tomato Bath</h1></div>
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> Eat Millet Foxtail Upma rava, Curd, Tomato, Onions, Green Chilies, Red Chillies, Turmeric, Coriander leaves, Pudina leaves, Kaju, Ginger, Ghee, Ground nuts, Mustard and cumin seeds, Salt for your taste.</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> Take  a Pan and Add oil as u required and add Mustard, Cumin seeds, dhal ,and add ground nuts then roasted it</li>
+                            <li><i class='bx bx-food-menu'></i> Then Add ginger , curry leaves , green and red chillies then fry it and add turmeric then add 1 cup of onions until fry golden colour</li>
+                            <li><i class='bx bx-food-menu'></i> And add Tomatoes (Finely chopped) and cook then add pudina leaves  fry it then add salt as your required for your taste</li>
+                            <li><i class='bx bx-food-menu'></i> Add curd 4 tablespoons and mix it then add Water sufficiently the ingredients are until  dipped into water and cook it for 10 mints</li>
+                            <li><i class='bx bx-food-menu'></i> Then Add Eat Millet Foxtail Upma rava and cook it until the water evaporated and add coriander  leaves then finally add ghee as u required for your taste then cook it for 10 mints</li>
+                            <li><i class='bx bx-food-menu'></i> Then finally serve Eat millet foxtail upma rava Tomato Bath with Raitha And Sambar.</li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe">
+                <div class="row">
+                    <img src="./All-Project-Img/image16.webp" alt="">
+                    <div class="recipe-text">
+                        <p style="font-size: 20px;font-weight: 600;">Millet Laddu</p>
+                        <button><span style="font-size:18px;cursor:pointer" onclick="openNav16()"><a href="#" style="font-size: 18px;">Taste Me <i class='bx bx-knife knife'></i></a></span></button>
+                    </div>
+                    <div id="myNav16" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav16()">&times;</a>
+                        <div class="overlay-content">
+                            <div  class="rec-head"><h1>Millet Laddu</h1></div>
+                            <p><h3>Ingredients:</h3><i class='bx bx-food-menu'></i> EatMillet Foxtail idli rava 1 cup, Wheat flour 1  cup, Medium size onion -1, Chilli-1, Coriander leaves, Salt as per your taste.</p>
+                          <ul>
+                            <li><h3>Making process:</h3></li>
+                            <li><i class='bx bx-food-menu'></i> Take 1 cup of EatMillet foxtail idli rava and what flour 1 cup and mix it well</li>
+                            <li><i class='bx bx-food-menu'></i> Add onions and chillies and coriander leaves then mix it </li>
+                            <li><i class='bx bx-food-menu'></i> And add some sufficient water to make like dosa batter, mix it well</li>
+                            <li><i class='bx bx-food-menu'></i> Take a pan and some oil on pan and add sufficient batter on the pan and fry it both sides</li>
+                            <li><i class='bx bx-food-menu'></i> Then ready to serve the EatMillet foxtail idli rava dosa with tomato chutney Or ground nut chutney.</li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<div class="re-btn">
+    <button type="submit"><a href="recipes.html">Previous</a></button>
+</div>
+
+
+<!-- Footer Start-->
+<div class="footer_body">
+    <footer>
+       <div class="container">
+           <div class="sec-aboutus">
+               <h2>About Us</h2>
+               <p>‘Nutri Millet’, established in December 2023, is a wholly-owned subsidiary of Coastal Foods India. We, at Nutri Millet, have successfully setup.</p>
+
+                    <ul class="sci">
+                       <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                       <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                       <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                       <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                    </ul>
+           </div>
+           <div class="sec quicklinks">
+               <h2>About</h2>
+               <ul>
+                   <li><a href="aboutmillet.html">Millets</a></li>
+                   <li><a href="indexp.html">Product</a></li>
+                   <li><a href="recipes.html">Recipes</a></li>
+                   <li><a href="testiminialmain.html">Testomonial</a></li>
+                   <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+           </div>
+           <div class="sec quicklinks">
+               <h2>NutriMillet.com</h2>
+               <ul>
+                   <li><a href="FAQs.html">FAQ's</a></li>
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Cookies</a></li>
+                   <li><a href="#">Help</a></li>
+               </ul>
+           </div>
+           <div class="sec contact">
+               <h2>Contact Us</h2>
+               <ul class="info">
+                   <li>
+                       <span><i class='bx bx-phone-call'></i></span>
+                       <p><a href="tel:+9175449093">+9175449093</a></p>
+                   </li>
+
+                   <li>
+                       <span><i class='bx bx-envelope' ></i></i></span>
+                       <p><a href="mailto:NutriMillet71@gmail.com">NutriMillet71@gmail.com</a></p>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </footer>
+   <div class="copyrightText">
+       <p>Copyright © 2023 Nutri Millet A Golden Grain Factory, Pune MH India. Powered by NutriMillet.Com</P> 
+   </div>
+</div>
+       <!-- Footer End -->
+           
+       <script src="script.js"></script>
+       <script src="login.js"></script>
+</body>
+</html>

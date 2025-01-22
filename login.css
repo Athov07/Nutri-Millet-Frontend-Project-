@@ -1,0 +1,492 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #e8e8e8;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.top{
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+    top: 300px;
+    right: 10px;
+    width: 100%;
+}
+
+.top a button{
+    background-color: white;
+}
+.top a{
+    float: inline-end;
+}
+
+.top a button i {
+    font-size: 30px;
+}
+/* Nevigation Bar 1 and 2 Start */
+
+nav{
+    background-color: rgb(147, 144, 144);
+    box-shadow: 3px 3px 5px rgb(100, 94, 94);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+nav ul li{
+    height: 50px;
+    padding: 0, 50px;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+} 
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* Sidebar Start for Nevigation 1 and 2 */
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar-links, .navbar-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  .toggle-btn {
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .navbar-links, .navbar-link {
+      display: none;
+    }
+
+    .navbar-links li, .navbar-link li {
+      width: 100%;
+    }
+
+    .navbar-links li a, .navbar-link li a {
+      display: block;
+    }
+    
+    .toggle-btn {
+      display: block;
+    }
+  }
+
+  .header img{
+    margin: 10px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 250px;
+  }
+
+  /* Login Start */
+
+  .container{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e8;
+    column-gap: 30px;
+}
+
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.head{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+
+}
+
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border:none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+
+}
+
+.field input{
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 15px;
+}
+
+.field input:focus{
+    border-bottom-width: 2px;
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #8b8b8b;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover{
+    background-color: #016dcb;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a{
+    text-decoration: none;
+    color: #0171d3;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50px, -50px);
+    background-color: #FFF;
+    color: #232836;
+    padding: 0 15px;
+    margin-top: 38px
+}
+
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a.facebook{
+    color: #fff;
+    background-color: #2467b2;
+}
+
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.facebook-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+a.google{
+    color: #fff;
+    background-color: #2467b2;
+}
+
+a.google .google-img{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 15px 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* Footer Start */
+
+.footer_body{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+}
+
+footer{
+    position: static;
+    width: 100%;
+    height: 250px;
+    padding: 50px 0px 20px 0px;
+    background-color: #333;
+    color: white;
+}
+
+footer .contai_log{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color: white;
+}
+
+footer .contai_log .sec-aboutus h2{
+    position: static;
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.body .contai_log .sec-aboutus{
+    padding-left: 10px;
+}
+
+footer .contai_log .sec-aboutus p{
+    background-color: #333;
+    color: white;
+}
+
+.contai_log .sec h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+footer .contai_log .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+
+footer .contai_log .sci li{
+    list-style: none;
+    color: white;
+}
+
+footer .contai_log .sci li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .contai_log .sci li a i{
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .contai_log .quicklinks{
+    position: static;
+}
+
+footer .contai_log .quicklinks ul li{
+    list-style: none;
+}
+
+footer .contai_log .quicklinks ul li a{
+    color: white;;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+
+footer .contai_log .contact{
+    padding-right: 10px;
+}
+
+footer .contai_log .contact .info{
+    position: static;
+}
+
+footer .contai_log .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+footer .contai_log .contact .info li span{
+    color: white;
+    font-size: 20px;
+}
+
+footer .contai_log .contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white ;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 800px) {
+    footer{
+        padding: 40px;
+
+    }
+
+    footer .contai_log{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    .copyrightText{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    footer .contai_log{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+}
+
+/* Footer End */

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+<!-- Navigation bar 1 Start -->
+<nav class="navbar">
+    <div class="navbar-toggle">
+      <button class="toggle-btn" onclick="toggleNav()">☰</button>
+    </div>
+    <ul class="navbar-link" id="navbar-link">
+        <li><a href="aboutmillet.html">Millets</a></li>
+        <li><a href="testiminialmain.html">Testomonial</a></li>
+        <li><a href="contactus.html">Contact Us </a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="FAQs.html">FAQ's</a></li>
+        <li><a href="loginmain.html">Login</a></li> 
+    </ul>
+  </nav>
+
+<!-- Navigation bar 1 End -->
+
+    <header>
+        <!-- Logo or site name -->
+        <div class="header">
+            <img src="logof.webp" alt="">
+        </div>
+
+        <!-- Navigation bar 2 Sart -->
+        <nav class="navbar">
+            <div class="navbar-toggle">
+              <button class="toggle-btn" onclick="toggleNav1()">☰</button>
+            </div>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="milletstype.html">Types</a></li>
+                <li><a href="indexp.html">Products</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="health.html">Health & Benefits</a></li>
+                <!-- <li><a href="#"><i class='bx bx-search-alt-2'></i></a></li> -->
+                <!-- <li><a href="#"><i class='bx bx-cart-alt'></i></a></li> -->
+            </ul>
+          </nav>
+        <!-- Navigation bar 2 End -->
+    </header>
+    <div class="top">
+        <a href=""><button type="submit"><i class='bx bx-up-arrow-alt'></i></button></a>
+    </div>
+    <main>
+        <section class="container forms">
+        
+            <div class="form login">
+                <div class="form-content">
+                    <header class="head">Login</header>
+    
+                    <form action="#">
+                        <div class="field input-field">
+                        <input type="email" placeholder="Email" id="myemail" class="input">
+                        </div>
+    
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" id="pin" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+    
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot Password?</a>
+                        </div>
+    
+                        <div class="field input-field">
+                            <button onclick="loginbutton()">Login</button>
+                        </div>
+    
+                    </form>
+    
+                    <div class="form-link">
+                        <span>Already have an account?<a href="#" class="link signup-link">SignUP</a></span>
+                    </div>
+                </div>
+    
+                <div class="line"></div>
+    
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                    </a>
+                </div>
+    
+                <div class="media-options">
+                    <a href="#" class="field google">
+                    <img src="Google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                    </a>
+                </div>
+    
+            </div>
+            
+    <!-- SignUP Form -->
+    
+    
+            <div class="form signup">
+                <div class="form-content">
+                    <header class="head">SignUp</header>
+    
+                    <form action="#">
+                        <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                        </div>
+    
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <!-- <i class='bx bx-hide eye-icon'></i> -->
+                        </div>
+    
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+    
+                        <!-- <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot Password?</a>
+                        </div> -->
+    
+                        <div class="field input-field">
+                            <button onclick="signupbutton()">SignUP</button>
+                        </div>
+    
+                    </form>
+    
+                    <div class="form-link">
+                        <span>Already have an account?<a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+    
+                <div class="line"></div>
+    
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                    </a>
+                </div>
+    
+                <div class="media-options">
+                    <a href="#" class="field google">
+                    <img src="Google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                    </a>
+                </div>
+    
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+     <!-- Footer Start -->
+     <div class="body">
+     <footer>
+        <div class="contai_log">
+            <div class="sec-aboutus">
+                <h2>About Us</h2>
+                <p>‘Nutri Millet’, established in December 2023, is a wholly-owned subsidiary of Coastal Foods India. We, at Nutri Millet, have successfully setup.</p>
+
+                     <ul class="sci">
+                        <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                     </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="aboutmillet.html">Millets</a></li>
+                    <li><a href="indexp.html">Product</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="testiminialmain.html">Testomonial</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>NutriMillet.com</h2>
+                <ul>
+                    <li><a href="FAQs.html">FAQ's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bx-phone-call'></i></span>
+                        <p><a href="tel:+9175449093">+9175449093</a></p>
+                    </li>
+
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></i></span>
+                        <p><a href="mailto:NutriMillet71@gmail.com">NutriMillet71@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2023 Nutri Millet A Golden Grain Factory, Pune MH India. Powered by NutriMillet.Com</P>
+    </div>
+</div>
+    <!-- Footer End -->
+        
+<script>
+    const forms = document.querySelector(".forms"),
+ pwShowHide = document.querySelectorAll(".eye-icon"),
+ links = document.querySelectorAll(".link");
+
+//  console.log(forms, pwShowHide, link)
+pwShowHide.forEach(eyeIcon => {
+    eyeIcon.addEventListener("click", () => {
+        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+        
+        pwFields.forEach(password => {
+            if(password.type === "password"){
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide","bx-show");
+                return;
+            }
+            password.type = "password";
+            eyeIcon.classList.replace("bx-show","bx-hide");
+        })
+    })
+})
+
+links.forEach(link => {
+    link.addEventListener("click", e =>{
+        e.preventDefault();
+        forms.classList.toggle("show-signup");
+    })
+})
+
+
+
+        function loginbutton(){
+            var a = document.getElementById("myemail").value;
+            var b = document.getElementById("pin").value;
+            if(a!="atharv17@gmail.com")
+            {
+                alert("invalid username");
+            }
+            if(b!="abc@123")
+            {
+                alert("invalid password");
+            }
+            else if(a=="atharv17@gmail.com" &&b=="abc@123")
+            {
+                alert("login successfully");
+            }
+
+            else if(a=="  " || b=="  ")
+            {
+                alert("fild is empty")
+            }
+
+
+        }
+       
+        function signupbutton(){
+            alert("Sign up Successfully done.")
+         
+        }
+    
+    </script>
+
+   
+</body>
+</html>

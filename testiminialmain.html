@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sorghum Millet</title>
+    <link rel="stylesheet" href="testimonial.css">
+    
+</head>
+<body>
+<!-- Navigation bar 1 Start -->
+<nav class="navbar">
+    <div class="navbar-toggle">
+      <button class="toggle-btn" onclick="toggleNav()">☰</button>
+    </div>
+    <ul class="navbar-link" id="navbar-link">
+        <li><a href="aboutmillet.html">Millets</a></li>
+        <li><a href="testiminialmain.html">Testomonial</a></li>
+        <li><a href="contactus.html">Contact Us </a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="FAQs.html">FAQ's</a></li>
+        <li><a href="loginmain.html">Login</a></li> 
+    </ul>
+  </nav>
+
+<!-- Navigation bar 1 End -->
+
+    <header>
+        <!-- Logo or site name -->
+        <div class="header">
+            <img src="logof.webp" alt="">
+        </div>
+
+        <!-- Navigation bar 2 Sart -->
+        <nav class="navbar">
+            <div class="navbar-toggle">
+              <button class="toggle-btn" onclick="toggleNav1()">☰</button>
+            </div>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="milletstype.html">Types</a></li>
+                <li><a href="indexp.html">Products</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="health.html">Health & Benefits</a></li>
+                <!-- <li><a href="#"><i class='bx bx-search-alt-2'></i></a></li> -->
+                <!-- <li><a href="#"><i class='bx bx-cart-alt'></i></a></li> -->
+            </ul>
+          </nav>
+        <!-- Navigation bar 2 End -->
+    </header>
+    
+    <main>
+        <div class="contai_test">
+	
+            <div class="contents-wraper">
+                <div class="top">
+                    <a href=""><button type="submit"><i class='bx bx-up-arrow-alt'></i></button></a>
+                </div>
+                
+                <section class="head"><h1>Testimonial</h1></section>
+        
+                <section class="testRow">
+
+                    <div class="testItem active">
+                        <img src="./test-img/G20logo.webp">
+                        <h3>G-20 Millet ,India</h3>
+                        <h4>India</h4>
+                        <p>The G20 Millet 2023 conference convened global leaders to address pressing agricultural challenges and promote sustainable millet production. Discussions centered on enhancing food security, fostering innovation in millet farming techniques, and empowering smallholder farmers to mitigate climate change impacts.</p>
+                    </div>
+                    
+                    <div class="testItem">
+                        <img src="./test-img/Sanjeev-Kapoor.jpg">
+                        <h3>Sanjeev Kapoor.</h3>
+                        <h4>Chef, Television Host & Entrepreneur</h4>
+                        <p>Nutri Millet Mills is my go-to for incorporating more whole grains into my diet. It cooks up fluffy and has a slightly nutty flavor that complements a variety of dishes. Plus, it's organic, which is important to me.</p>
+                    </div>
+        
+                    <div class="testItem">
+                        <img src="./test-img/vikas_khanna.jpg">
+                        <h3>Vikas Khanna.</h3>
+                        <h4>chef, restaurateur, cookbook writer</h4>
+                        <p>The combination of quinoa and Nutri millet makes it a powerhouse of nutrition, and it's so easy to cook. I use it as a base for grain bowls or as a side dish with veggies. Highly recommend!</p>
+                    </div>
+        
+                    <div class="testItem">
+                        <img src="./test-img/RanveerBrar.jpg">
+                        <h3>Ranveer Brar.</h3>
+                        <h4>Chef, television host</h4>
+                        <p>I've been a fan of Nutri Millet for years. It's consistently high quality, and I appreciate that it's grown and processed using organic methods. It cooks up fluffy and has a mild, pleasant taste. Great for pilafs, salads, or as a breakfast porridge.</p>
+                    </div>
+        
+                    <div class="testItem">
+                        <img src="./test-img/madhur_jaffrey.jpg">
+                        <h3>Madhur Jaffrey.</h3>
+                        <h4>The chef, author and actress</h4>
+                        <p>Nutri Millet is a pantry staple for me. It's affordable, versatile, and cooks up quickly. I use it in soups, stews, and even in baking. Love the texture and the subtle flavor it adds to my dishes.</p>
+                    </div>
+        
+                </section>
+        
+                <section class="indicators">
+                    <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='1' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='2' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='3' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='4' onclick="switchTest(this)"></div>
+                </section>
+        
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <script type="text/javascript">
+	
+        // Access the testimonials
+        let testSlide = document.querySelectorAll('.testItem');
+        // Access the indicators
+        let dots = document.querySelectorAll('.dot');
+    
+        var counter = 0;
+    
+        // Add click event to the indicators
+        function switchTest(currentTest){
+            currentTest.classList.add('active');
+            var testId = currentTest.getAttribute('attr');
+            if(testId > counter){
+                testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+                counter = testId;
+                testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+            }
+            else if(testId == counter){return;}
+            else{
+                testSlide[counter].style.animation = 'prev1 0.5s ease-in forwards';
+                counter = testId;
+                testSlide[counter].style.animation = 'prev2 0.5s ease-in forwards';
+            }
+            indicators();
+        }
+    
+        // Add and remove active class from the indicators
+        function indicators(){
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            dots[counter].className += ' active';
+        }
+    
+        // Code for auto sliding
+        function slideNext(){
+            testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+            if(counter >= testSlide.length - 1){
+                counter = 0;
+            }
+            else{
+                counter++;
+            }
+            testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+            indicators();
+        }
+        function autoSliding(){
+            deleteInterval = setInterval(timer, 2000);
+            function timer(){
+                slideNext();
+                indicators();
+            }
+        }
+        autoSliding();
+    
+        // Stop auto sliding when mouse is over the indicators
+        const container = document.querySelector('.indicators');
+        container.addEventListener('mouseover', pause);
+        function pause(){
+            clearInterval(deleteInterval);
+        }
+    
+        // Resume sliding when mouse is out of the indicators
+        container.addEventListener('mouseout', autoSliding);
+    
+    </script>
+
+
+
+
+
+     <!-- Footer Start -->
+     <div class="footer_body">
+        <footer>
+           <div class="container">
+               <div class="sec-aboutus">
+                   <h2>About Us</h2>
+                   <p>‘Nutri Millet’, established in December 2023, is a wholly-owned subsidiary of Coastal Foods India. We, at Nutri Millet, have successfully setup.</p>
+   
+                        <ul class="sci">
+                           <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                           <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                           <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                           <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                        </ul>
+               </div>
+               <div class="sec quicklinks">
+                   <h2>About</h2>
+                   <ul>
+                       <li><a href="aboutmillet.html">Millets</a></li>
+                       <li><a href="indexp.html">Product</a></li>
+                       <li><a href="recipes.html">Recipes</a></li>
+                       <li><a href="testiminialmain.html">Testomonial</a></li>
+                       <li><a href="feedback.html">Feedback</a></li>
+                   </ul>
+               </div>
+               <div class="sec quicklinks">
+                   <h2>NutriMillet.com</h2>
+                   <ul>
+                       <li><a href="FAQs.html">FAQ's</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li><a href="#">Cookies</a></li>
+                       <li><a href="#">Help</a></li>
+                   </ul>
+               </div>
+               <div class="sec contact">
+                   <h2>Contact Us</h2>
+                   <ul class="info">
+                       <li>
+                           <span><i class='bx bx-phone-call'></i></span>
+                           <p><a href="tel:+9175449093">+9175449093</a></p>
+                       </li>
+   
+                       <li>
+                           <span><i class='bx bx-envelope' ></i></i></span>
+                           <p><a href="mailto:NutriMillet71@gmail.com">NutriMillet71@gmail.com</a></p>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </footer>
+       <div class="copyrightText">
+           <p>Copyright © 2023 Nutri Millet A Golden Grain Factory, Pune MH India. Powered by NutriMillet.Com</P> 
+       </div>
+   </div>
+    <!-- Footer End -->
+        
+</body>
+</html>

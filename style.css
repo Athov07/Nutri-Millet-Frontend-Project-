@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Nevigation Bar 1 and 2 Start */
+
+nav{
+    background-color: #333;
+    box-shadow: 3px 3px 5px rgb(100, 94, 94);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+nav ul li{
+    height: 50px;
+    padding: 0, 50px;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+} 
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* Sidebar Start for Nevigation 1 and 2 */
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar-links, .navbar-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  .toggle-btn {
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .navbar-links, .navbar-link {
+      display: none;
+    }
+
+    .navbar-links li, .navbar-link li {
+      width: 100%;
+    }
+
+    .navbar-links li a, .navbar-link li a {
+      display: block;
+    }
+    
+    .toggle-btn {
+      display: block;
+    }
+  }
+
+  .header img{
+    margin: 10px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 250px;
+  }
+
+  main{
+    width: 100%;
+    height: auto;
+  }
+
+/* Slider Start */
+.slider0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.slider{
+    width: 90vw;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 90vw;
+    height: 500px;
+}
+
+/* CSS for Manual Slide Navigation */
+
+.navigation-manual{
+    position: static;
+    width: 90vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: red;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~.first{
+    margin-left: -80%;
+}
+
+/* CSS for automatic navigation */
+
+.navigation-auto{
+    position: static;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto.btn1{
+    background: blue;
+}
+
+#radio2:checked ~ .navigation-auto .auto.btn2{
+    background: blue;
+}
+
+#radio3:checked ~ .navigation-auto .auto.btn3{
+    background: blue;
+}
+
+#radio4:checked ~ .navigation-auto .auto.btn4{
+    background: blue;
+}
+
+#radio5:checked ~ .navigation-auto .auto.btn4{
+    background: blue;
+}
+
+
+
+@media(max-width: 800px){
+.slider{
+    min-width: 80vw;
+}
+
+.slide img{
+    min-width: 80vw;
+}
+
+.navigation-manual{
+    min-width: 80vw;
+}
+
+.navigation-auto{
+    min-width: 80vw;
+}
+
+}
+
+@media(max-width: 400px){
+    .slider{
+        min-width: 70vw;
+        height: 350px;
+    }
+    
+    .slide img{
+        min-width: 70vw;
+        height: 350px;
+    }
+    
+    .navigation-manual{
+        min-width: 70vw;
+            
+    }
+    
+    .navigation-auto{
+        min-width: 70vw;
+            
+    }
+    
+}
+
+/* Slider End */
+
+
+
+/* Footer Start */
+
+.footer_body{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    width: 100%;
+    /* height: 400px; */
+    background-color: #333;
+}
+
+footer{
+    position: static;
+    width: 100%;
+    /* height: 250px; */
+    padding: 50px 0px 20px 0px;
+    background-color: #333;
+    color: white;
+}
+
+footer .contai{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color: white;
+}
+
+footer .contai .sec-aboutus h2{
+    position: static;
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.body .contai .sec-aboutus{
+    padding-left: 10px;
+}
+
+footer .contai .sec-aboutus p{
+    background-color: #333;
+    color: white;
+}
+
+.contai .sec h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+footer .contai .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+
+footer .contai .sci li{
+    list-style: none;
+    color: white;
+}
+
+footer .contai .sci li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .contai .sci li a i{
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .contai .quicklinks{
+    position: static;
+}
+
+footer .contai .quicklinks ul li{
+    list-style: none;
+}
+
+footer .contai .quicklinks ul li a{
+    color: white;;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+
+footer .contai .contact{
+    padding-right: 10px;
+}
+
+footer .contai .contact .info{
+    position: static;
+}
+
+footer .contai .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+footer .contai .contact .info li span{
+    color: white;
+    font-size: 20px;
+}
+
+footer .contai .contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white ;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 800px) {
+    footer{
+        padding: 40px;
+
+    }
+
+    footer .contai{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    .copyrightText{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    footer .contai{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+}
+
+/* Footer End */
